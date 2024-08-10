@@ -199,7 +199,9 @@ body{
 
 .logo-icon img {
  width: 80px; 
-height: auto; 
+height: auto;
+transition: transform 0.6s ease-in-out;
+transform-origin: center;  
     }     
     
     @keyframes multicolor {
@@ -250,7 +252,23 @@ height: auto;
     .btn:hover {
         animation: multicolor-bg 2s infinite;
         color: white; 
-    }    
+    }   
+    
+    @keyframes spin {
+        0% {
+            transform: rotateY(0deg);
+        }
+        50% {
+            transform: rotateY(180deg);
+        }
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
+    
+    .logo-icon img:hover {
+        animation: spin 1s infinite ease-in-out; 
+    }
 
     
 
@@ -283,7 +301,9 @@ height: auto;
 
     .logo-icon img {
         width: 80px; 
-        height: auto; 
+        height: auto;
+        transition: transform 0.6s ease-in-out;
+        transform-origin: center;  
     }
 
     .search-section {
@@ -429,6 +449,23 @@ height: auto;
 .btn:hover {
     animation: multicolor-bg 2s infinite;
     color: white; 
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.logo-icon img:hover {
+    animation: spin 1s infinite ease-in-out; 
 }
 }
 
