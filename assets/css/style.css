@@ -325,6 +325,8 @@ transform-origin: center;
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        background: linear-gradient(45deg, #58676e, #397315);
+   color: white;
     }
 
     .search-section h3 {
@@ -377,6 +379,7 @@ transform-origin: center;
 
    padding-top: 10px;
    text-align: center;
+   
   }
         
     
